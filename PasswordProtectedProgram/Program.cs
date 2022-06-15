@@ -29,7 +29,7 @@ namespace PasswordProtectedProgram
                 }
             }
 
-            if (!isAuthorized)
+            if (isAuthorized == false)
             {
                 Console.WriteLine($"Вы {tryCount} раза ввели не верный пароль! Данная программа самоуничтожится!");
             }
